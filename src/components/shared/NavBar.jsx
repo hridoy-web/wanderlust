@@ -12,7 +12,7 @@ const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (
-        <nav className="bg-gray-100 border-b-2 px-4 md:px-8 lg:px-16 relative">
+        <nav className="bg-base-200 border-b-2 px-4 md:px-8 lg:px-16 relative">
 
             <div className="flex items-center justify-between py-4 ">
 
@@ -56,7 +56,7 @@ const NavBar = () => {
                 </button>
 
                 {isMenuOpen && (
-                    <ul className="md:hidden absolute top-full right-0  bg-gray-100 border rounded-xl shadow-xl py-6 px-6 flex flex-col gap-2 animate-in slide-in-from-top duration-500 z-50">
+                    <ul className="md:hidden absolute top-full left-0 w-full  bg-white border rounded shadow-xl py-5 px-6 flex flex-col gap-2 animate-in slide-in-from-top duration-500 z-50">
                         <li>
                             <Link
                                 href={'/'}
@@ -88,7 +88,6 @@ const NavBar = () => {
                         </li>
                     </ul>
                 )}
-
 
             </div>
         </nav>
